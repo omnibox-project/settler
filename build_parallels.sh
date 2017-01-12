@@ -13,6 +13,7 @@ prl_disk_tool compact --hdd ~/Parallels/settler_default_*.pvm/harddisk*.hdd
 rm -f ~/Parallels/settler_default_*.pvm/*.log
 
 # Package the box
+rm parallels.box
 vagrant package --output parallels.box
 vagrant destroy -f
 rm -rf .vagrant
